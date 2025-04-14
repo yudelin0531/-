@@ -1,17 +1,18 @@
 /* 頁面設定 */
 body {
-    font-family: 'Comic Sans MS', sans-serif;
-    background: linear-gradient(135deg, #f0e6d6, #f7f1e1); /* 米色系漸層背景 */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf6f0;
     max-width: 600px;
     margin: auto;
     padding: 30px;
     box-sizing: border-box;
+    color: #5c4438;
 }
 
 /* 標題 */
 h1 {
     text-align: center;
-    color: #d4a29c; /* 淡米色調粉紅色 */
+    color: #a47148;
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -19,10 +20,10 @@ h1 {
 
 /* 記帳表單 */
 form {
-    background-color: #fff9f1; /* 淺米色背景 */
+    background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
     width: 100%;
     max-width: 500px;
@@ -33,7 +34,7 @@ form {
 /* 表單內部元件 */
 form label {
     font-size: 1.2rem;
-    color: #d4a29c; /* 淡米色調粉紅色 */
+    color: #a47148;
     margin-bottom: 8px;
     display: block;
 }
@@ -42,23 +43,24 @@ form input, form select, form button {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 2px solid #d4a29c;
+    border: 2px solid #e9cfc0;
     border-radius: 10px;
     font-size: 1.1rem;
-    color: #6f4f37; /* 深米色文字 */
+    color: #5c4438;
     outline: none;
     box-sizing: border-box;
+    background-color: #fffaf5;
 }
 
 /* 表單項目的focus效果 */
 form input:focus, form select:focus, form button:focus {
-    border-color: #b47f6f; /* 深米色 */
-    box-shadow: 0 0 5px rgba(180, 127, 111, 0.5);
+    border-color: #a47148;
+    box-shadow: 0 0 5px rgba(164, 113, 72, 0.3);
 }
 
 /* 按鈕樣式 */
 form button {
-    background-color: #d4a29c;
+    background-color: #a47148;
     color: white;
     cursor: pointer;
     border: none;
@@ -66,7 +68,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #b47f6f; /* 按鈕的深米色 hover */
+    background-color: #8b5e3c;
 }
 
 /* 記帳紀錄區域 */
@@ -75,29 +77,27 @@ form button:hover {
 }
 
 .record {
-    background-color: #f8f2e1; /* 記帳紀錄的背景顏色 */
+    background-color: #fffaf5;
     border-radius: 12px;
-    border: 1px solid #d4a29c;
+    border: 1px solid #e9cfc0;
     padding: 15px;
     margin: 10px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* 記帳紀錄文字 */
 .record p {
     margin: 8px 0;
-    color: #6f4f37; /* 深米色文字 */
+    color: #5c4438;
     font-size: 1.1rem;
 }
 
 .record strong {
-    color: #d4a29c; /* 淡米色調粉紅色 */
+    color: #a47148;
     font-weight: bold;
 }
 
-/* 記帳紀錄內部的間隔 */
 hr {
-    border: 1px solid #b47f6f;
+    border: 1px solid #e9cfc0;
     margin-top: 10px;
     margin-bottom: 10px;
 }

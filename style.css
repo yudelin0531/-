@@ -1,13 +1,12 @@
-/* 頁面設定 */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #fdf6f0;
-    max-width: 600px;
-    margin: auto;
     padding: 30px;
     box-sizing: border-box;
     color: #5c4438;
-}
+    margin: 0;               /* 取消自動置中 */
+    max-width: none;         /* 移除寬度限制 */
+  }
 
 /* 標題 */
 h1 {
@@ -101,3 +100,53 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* 容器設定：左右兩欄 */
+.container {
+    display: flex;
+    gap: 20px;
+    height: 80vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;                 /* 取消左右 margin */
+    padding: 0 20px;           /* 視情況保留一點內邊距 */
+  }
+  
+  /* 左側表單固定寬度 + 固定在畫面 */
+  .form-panel {
+    flex: 0 0 400px;
+    position: sticky;
+    top: 30px;
+    align-self: flex-start;
+    margin-left: 0;
+    padding-left: 150px;
+  }
+  
+  /* 右側紀錄區塊可滾動 */
+  .record-panel {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 80vh;
+    padding-right: 10px;
+    padding-left: 200px;  /* <-- 加上這一行讓它往右偏一點 */
+    border-left: 2px solid #e9cfc0;
+  }
+  
+  /* 防止表單超過寬度 */
+  form {
+    width: 100%;
+    max-width: unset;
+  }
+  .delete-btn {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c62828;
+  }

@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>記帳本</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <h1>簡單記帳本</h1>
 
   <div class="container">
-    <!-- 左側：新增表單 -->
+    <!-- 左側表單 -->
     <div class="form-panel">
       <form id="recordForm">
         <label for="date">日期：</label>
@@ -34,11 +35,10 @@
       </form>
     </div>
 
-    <!-- 右側：紀錄/報表區 -->
+    <!-- 右側：紀錄/報表 -->
     <div class="record-panel">
       <h2>記帳紀錄</h2>
 
-      <!-- 檢視切換與篩選 -->
       <div class="filter-bar">
         <label for="viewToggle">檢視：</label>
         <select id="viewToggle">
@@ -55,7 +55,9 @@
       </div>
 
       <div id="records"></div>
-      <div id="report" style="display:none;"></div>
+      <div id="report" style="display:none;">
+        <canvas id="reportChart" width="400" height="400"></canvas>
+      </div>
     </div>
   </div>
 

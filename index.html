@@ -34,10 +34,28 @@
       </form>
     </div>
 
-    <!-- 右側：紀錄清單 -->
+    <!-- 右側：紀錄/報表區 -->
     <div class="record-panel">
       <h2>記帳紀錄</h2>
+
+      <!-- 檢視切換與篩選 -->
+      <div class="filter-bar">
+        <label for="viewToggle">檢視：</label>
+        <select id="viewToggle">
+          <option value="records">支出紀錄</option>
+          <option value="report">支出報表</option>
+        </select>
+
+        <label for="monthFilter">月份：</label>
+        <select id="monthFilter">
+          <option value="all">全部</option>
+        </select>
+
+        <span id="monthlyTotal">總支出：0 元</span>
+      </div>
+
       <div id="records"></div>
+      <div id="report" style="display:none;"></div>
     </div>
   </div>
 
